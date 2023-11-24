@@ -7,6 +7,9 @@ import ShopifySettings from "../pages/shopify";
 // use lazy for better code splitting
 const Dashboard = lazy(() => import("../pages/Dashboard"));
 const Products = lazy(() => import("../pages/Products"));
+const Packages = lazy(() => import("../pages/Packages"));
+const LivePackages = lazy(() => import("../pages/LivePackages"));
+const Coupons = lazy(() => import("../pages/Coupons"));
 const Shops = lazy(() => import("../pages/Shops"));
 const ProfileDetails = lazy(() => import("../pages/Profile"));
 const ProductDetails = lazy(() => import("../pages/ProductDetails"));
@@ -18,7 +21,7 @@ const OrderInvoice = lazy(() => import("../pages/OrderInvoice"));
 // const Setting = lazy(() => import("../pages/Setting"));
 const Page404 = lazy(() => import("../pages/404"));
 const Woocommerce = lazy(() => import("../pages/Woocomerce"));
-const ComingSoon = lazy(() => import("../pages/ComingSoon")); 
+const ComingSoon = lazy(() => import("../pages/ComingSoon"));
 const EditProfile = lazy(() => import("../pages/EditProfile"));
 const Rooms = lazy(() => import("../pages/Rooms"));
 const ShippingMethods = lazy(() => import("../pages/ShippingMethods"));
@@ -43,6 +46,18 @@ const routes = [
   {
     path: "/products",
     component: Products,
+  },
+  {
+    path: "/packages",
+    component: Packages,
+  },
+  {
+    path: "/livepackages",
+    component: LivePackages,
+  },
+  {
+    path: "/coupons",
+    component: Coupons,
   },
   {
     path: "/shops",

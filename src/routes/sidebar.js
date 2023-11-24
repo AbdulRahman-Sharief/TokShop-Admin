@@ -6,7 +6,10 @@ import {
   FiCompass,
   FiList,
   FiSlack,
+  FiPackage
 } from "react-icons/fi";
+import { TbPackages } from "react-icons/tb";
+import { RiCoupon3Line } from "react-icons/ri";
 
 const sidebar = [
   {
@@ -19,7 +22,21 @@ const sidebar = [
     icon: FiShoppingBag,
     name: "Products",
   },
-  
+  {
+    path: '/packages',
+    icon: FiPackage,
+    name: 'Packages'
+  },
+  {
+    path: '/livepackages',
+    icon: TbPackages,
+    name: 'Live Packages'
+  },
+  {
+    path: "/coupons",
+    icon: RiCoupon3Line,
+    name: 'Coupons'
+  },
   {
     path: "/channels",
     icon: FiList,

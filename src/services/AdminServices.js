@@ -34,6 +34,21 @@ const AdminServices = {
   getAllAdmin() {
     return requests.get("/admin");
   },
+  getAllPackages() {
+    return requests.get("/packages");
+  },
+  getAllLivePackages() {
+    return requests.get("/livePackges");
+  },
+  getAllLiveCoupons() {
+    return requests.get("/coupons");
+  },
+  getAllSubs(id) {
+    return requests.get("/subscriptions/AllSubscription/" + id);
+  },
+  getAllLiveSubs(id) {
+    return requests.get("/auction-subscriptions/AllSubscription/" + id);
+  },
   getAdminById(id) {
     return requests.get(`/admin/id/${id}`);
   },

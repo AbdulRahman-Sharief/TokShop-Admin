@@ -10,7 +10,6 @@ import EditDeleteButton from "../table/EditDeleteButton";
 
 const AdminTable = ({ staffs }) => {
   const { title, serviceId, handleModalOpen, handleUpdate } = useToggleDrawer();
-
   return (
     <>
       <MainModal id={serviceId} title={title} />
